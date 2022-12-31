@@ -86,12 +86,15 @@
   }
 
   .row2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
     width: 40%;
     height: 20%;
-    margin-top: 25px;
+    margin-top: 10px;
     font-weight: 800;
-    padding-top: 5px;
+    padding-top: 0;
     font-size: 30px;
   }
 }
@@ -141,4 +144,40 @@
 }
 .overlay-maroon {
   background-color: #7e0023;
+}
+.overlay2-green {
+  color: #00e400;
+}
+.overlay2-yellow {
+  color: #ffff00;
+}
+.overlay2-orange {
+  color: #ff7e00;
+}
+.overlay2-red {
+  color: #ff0000;
+}
+.overlay2-purple {
+  color: #8f3f97;
+}
+.overlay2-maroon {
+  color: #7e0023;
+}
+
+.hidden-div {
+  transition: all 1s ease-in;
+  background-color: #191a19;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  // color: white;
+  // top: 50px;
+  // left: 100px;
+  // z-index: 99;
+  bottom: 1.4px;
 }

@@ -3,6 +3,11 @@ var card2 = document.getElementById("card2");
 var card3 = document.getElementById("card3");
 var card4 = document.getElementById("card4");
 
+let div = document.createElement("div");
+div.className = "hidden-div";
+div.style = "display:none";
+div.style.color = "white";
+div.style.width = 0;
 var check = setInterval(() => {
   if (
     typeof card1 != "undefined" &&
@@ -26,17 +31,33 @@ var check = setInterval(() => {
 const check1enter = () => {
   if (card1.style.borderColor === "rgb(0, 228, 0)") {
     card1.classList.add("overlay-green");
+    div.innerHTML = "Good";
+    div.classList.add("overlay2-green");
   } else if (card1.style.borderColor === "rgb(255, 255, 0)") {
     card1.classList.add("overlay-yellow");
+    div.innerHTML = "Moderate";
+    div.classList.add("overlay2-yellow");
   } else if (card1.style.borderColor === "rgb(255, 126, 0)") {
     card1.classList.add("overlay-orange");
+    div.innerHTML = "Unhealty for Sensitive Groups";
+    div.classList.add("overlay2-orange");
   } else if (card1.style.borderColor === "rgb(255, 0, 0)") {
     card1.classList.add("overlay-red");
+    div.innerHTML = "Unhealthy";
+    div.classList.add("overlay2-red");
   } else if (card1.style.borderColor === "rgb(143, 63, 151)") {
     card1.classList.add("overlay-purple");
+    div.innerHTML = "Very Unhealthy";
+    div.classList.add("overlay2-purple");
   } else {
     card1.classList.add("overlay-maroon");
+    div.innerHTML = "Hazardous";
+    div.classList.add("overlay2-maroon");
   }
+  div.style = "display:flex";
+  div.style.width = 100;
+  const container = document.getElementById("container");
+  container.insertBefore(div, container.firstChild);
 };
 const check1exit = () => {
   if (card1.style.borderColor === "rgb(0, 228, 0)") {
@@ -52,21 +73,50 @@ const check1exit = () => {
   } else {
     card1.classList.remove("overlay-maroon");
   }
+  div.style = "display:none";
+  if (div.classList.contains("overlay2-green")) {
+    div.classList.remove("overlay2-green");
+  } else if (div.classList.contains("overlay2-yellow")) {
+    div.classList.remove("overlay2-yellow");
+  } else if (div.classList.contains("overlay2-orange")) {
+    div.classList.remove("overlay2-orange");
+  } else if (div.classList.contains("overlay2-red")) {
+    div.classList.remove("overlay2-red");
+  } else if (div.classList.contains("overlay2-purple")) {
+    div.classList.remove("overlay2-purple");
+  } else {
+    div.classList.remove("overlay2-maroon");
+  }
 };
 const check2enter = () => {
   if (card2.style.borderColor === "rgb(0, 228, 0)") {
     card2.classList.add("overlay-green");
+    div.innerHTML = "Good";
+    div.classList.add("overlay2-green");
   } else if (card2.style.borderColor === "rgb(255, 255, 0)") {
     card2.classList.add("overlay-yellow");
+    div.innerHTML = "Moderate";
+    div.classList.add("overlay2-yellow");
   } else if (card2.style.borderColor === "rgb(255, 126, 0)") {
     card2.classList.add("overlay-orange");
+    div.innerHTML = "Unhealty for Sensitive Groups";
+    div.classList.add("overlay2-orange");
   } else if (card2.style.borderColor === "rgb(255, 0, 0)") {
     card2.classList.add("overlay-red");
+    div.innerHTML = "Unhealthy";
+    div.classList.add("overlay2-red");
   } else if (card2.style.borderColor === "rgb(143, 63, 151)") {
     card2.classList.add("overlay-purple");
+    div.innerHTML = "Very Unhealthy";
+    div.classList.add("overlay2-purple");
   } else {
     card2.classList.add("overlay-maroon");
+    div.innerHTML = "Hazardous";
+    div.classList.add("overlay2-maroon");
   }
+  div.style = "display:flex";
+  const container = document.getElementById("container");
+  container.insertBefore(div, container.firstChild);
 };
 const check2exit = () => {
   if (card2.style.borderColor === "rgb(0, 228, 0)") {
@@ -82,21 +132,50 @@ const check2exit = () => {
   } else {
     card2.classList.remove("overlay-maroon");
   }
+  div.style = "display:none";
+  if (div.classList.contains("overlay2-green")) {
+    div.classList.remove("overlay2-green");
+  } else if (div.classList.contains("overlay2-yellow")) {
+    div.classList.remove("overlay2-yellow");
+  } else if (div.classList.contains("overlay2-orange")) {
+    div.classList.remove("overlay2-orange");
+  } else if (div.classList.contains("overlay2-red")) {
+    div.classList.remove("overlay2-red");
+  } else if (div.classList.contains("overlay2-purple")) {
+    div.classList.remove("overlay2-purple");
+  } else {
+    div.classList.remove("overlay2-maroon");
+  }
 };
 const check3enter = () => {
   if (card3.style.borderColor === "rgb(0, 228, 0)") {
     card3.classList.add("overlay-green");
+    div.innerHTML = "Good";
+    div.classList.add("overlay2-green");
   } else if (card3.style.borderColor === "rgb(255, 255, 0)") {
     card3.classList.add("overlay-yellow");
+    div.innerHTML = "Moderate";
+    div.classList.add("overlay2-yellow");
   } else if (card3.style.borderColor === "rgb(255, 126, 0)") {
     card3.classList.add("overlay-orange");
+    div.innerHTML = "Unhealty for Sensitive Groups";
+    div.classList.add("overlay2-orange");
   } else if (card3.style.borderColor === "rgb(255, 0, 0)") {
     card3.classList.add("overlay-red");
+    div.innerHTML = "Unhealthy";
+    div.classList.add("overlay2-red");
   } else if (card3.style.borderColor === "rgb(143, 63, 151)") {
     card3.classList.add("overlay-purple");
+    div.innerHTML = "Very Unhealthy";
+    div.classList.add("overlay2-purple");
   } else {
     card3.classList.add("overlay-maroon");
+    div.innerHTML = "Hazardous";
+    div.classList.add("overlay2-maroon");
   }
+  div.style = "display:flex";
+  const container = document.getElementById("container");
+  container.insertBefore(div, container.firstChild);
 };
 const check3exit = () => {
   if (card3.style.borderColor === "rgb(0, 228, 0)") {
@@ -112,21 +191,50 @@ const check3exit = () => {
   } else {
     card3.classList.remove("overlay-maroon");
   }
+  div.style = "display:none";
+  if (div.classList.contains("overlay2-green")) {
+    div.classList.remove("overlay2-green");
+  } else if (div.classList.contains("overlay2-yellow")) {
+    div.classList.remove("overlay2-yellow");
+  } else if (div.classList.contains("overlay2-orange")) {
+    div.classList.remove("overlay2-orange");
+  } else if (div.classList.contains("overlay2-red")) {
+    div.classList.remove("overlay2-red");
+  } else if (div.classList.contains("overlay2-purple")) {
+    div.classList.remove("overlay2-purple");
+  } else {
+    div.classList.remove("overlay2-maroon");
+  }
 };
 const check4enter = () => {
   if (card4.style.borderColor === "rgb(0, 228, 0)") {
     card4.classList.add("overlay-green");
+    div.innerHTML = "Good";
+    div.classList.add("overlay2-green");
   } else if (card4.style.borderColor === "rgb(255, 255, 0)") {
     card4.classList.add("overlay-yellow");
+    div.innerHTML = "Moderate";
+    div.classList.add("overlay2-yellow");
   } else if (card4.style.borderColor === "rgb(255, 126, 0)") {
     card4.classList.add("overlay-orange");
+    div.innerHTML = "Unhealty for Sensitive Groups";
+    div.classList.add("overlay2-orange");
   } else if (card4.style.borderColor === "rgb(255, 0, 0)") {
     card4.classList.add("overlay-red");
+    div.innerHTML = "Unhealthy";
+    div.classList.add("overlay2-red");
   } else if (card4.style.borderColor === "rgb(143, 63, 151)") {
     card4.classList.add("overlay-purple");
+    div.innerHTML = "Very Unhealthy";
+    div.classList.add("overlay2-purple");
   } else {
     card4.classList.add("overlay-maroon");
+    div.innerHTML = "Hazardous";
+    div.classList.add("overlay2-maroon");
   }
+  div.style = "display:flex";
+  const container = document.getElementById("container");
+  container.insertBefore(div, container.firstChild);
 };
 const check4exit = () => {
   if (card4.style.borderColor === "rgb(0, 228, 0)") {
@@ -141,6 +249,20 @@ const check4exit = () => {
     card4.classList.remove("overlay-purple");
   } else {
     card4.classList.remove("overlay-maroon");
+  }
+  div.style = "display:none";
+  if (div.classList.contains("overlay2-green")) {
+    div.classList.remove("overlay2-green");
+  } else if (div.classList.contains("overlay2-yellow")) {
+    div.classList.remove("overlay2-yellow");
+  } else if (div.classList.contains("overlay2-orange")) {
+    div.classList.remove("overlay2-orange");
+  } else if (div.classList.contains("overlay2-red")) {
+    div.classList.remove("overlay2-red");
+  } else if (div.classList.contains("overlay2-purple")) {
+    div.classList.remove("overlay2-purple");
+  } else {
+    div.classList.remove("overlay2-maroon");
   }
 };
 

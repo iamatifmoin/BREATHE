@@ -66,7 +66,7 @@ const Input = () => {
                     : receivedData?.["CO"]["aqi"] < 150
                     ? "#FF7E00"
                     : receivedData?.["CO"]["aqi"] < 200
-                    ? "red"
+                    ? "#7e0023"
                     : receivedData?.["CO"]["aqi"] < 300
                     ? "#8F3F97"
                     : receivedData?.["CO"]["aqi"] > 300
@@ -96,7 +96,7 @@ const Input = () => {
                     : receivedData?.["NO2"]["aqi"] < 150
                     ? "#FF7E00"
                     : receivedData?.["NO2"]["aqi"] < 200
-                    ? "red"
+                    ? "#7e0023"
                     : receivedData?.["NO2"]["aqi"] < 300
                     ? "#8F3F97"
                     : receivedData?.["NO2"]["aqi"] > 300
@@ -126,7 +126,7 @@ const Input = () => {
                     : receivedData?.["O3"]["aqi"] < 150
                     ? "#FF7E00"
                     : receivedData?.["O3"]["aqi"] < 200
-                    ? "red"
+                    ? "#7e0023"
                     : receivedData?.["O3"]["aqi"] < 300
                     ? "#8F3F97"
                     : receivedData?.["O3"]["aqi"] > 300
@@ -156,7 +156,7 @@ const Input = () => {
                     : receivedData?.["SO2"]["aqi"] < 150
                     ? "#FF7E00"
                     : receivedData?.["SO2"]["aqi"] < 200
-                    ? "red"
+                    ? "#7e0023"
                     : receivedData?.["SO2"]["aqi"] < 300
                     ? "#8F3F97"
                     : receivedData?.["SO2"]["aqi"] > 300
@@ -185,7 +185,7 @@ const Input = () => {
                     : receivedData?.["overall_aqi"] < 150
                     ? "#FF7E00"
                     : receivedData?.["overall_aqi"] < 200
-                    ? "red"
+                    ? "#7e0023"
                     : receivedData?.["overall_aqi"] < 300
                     ? "#8F3F97"
                     : receivedData?.["overall_aqi"] > 300
