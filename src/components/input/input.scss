@@ -67,36 +67,36 @@
       &:hover {
         transform: scale(1.05);
       }
-      .heading {
-        font-weight: 800;
-        font-size: 30px;
-      }
+    }
+    .heading {
+      font-weight: 800;
+      font-size: 30px;
+    }
 
-      .concentration {
-        padding-top: 15px;
-        margin: 5px;
-        font-size: 10px;
-      }
-      .aqi {
-        font-size: 10px;
-        padding: 0;
-        margin: 0;
-      }
+    .concentration {
+      padding-top: 15px;
+      margin: 5px;
+      font-size: 10px;
+    }
+    .aqi {
+      font-size: 10px;
+      padding: 0;
+      margin: 0;
     }
   }
+}
 
-  .row2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    width: 40%;
-    height: 20%;
-    margin-top: 10px;
-    font-weight: 800;
-    padding-top: 0;
-    font-size: 30px;
-  }
+.row2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 40%;
+  height: 20%;
+  margin-top: 10px;
+  font-weight: 800;
+  padding-top: 0;
+  font-size: 30px;
 }
 
 .loader-container {
@@ -165,9 +165,8 @@
 }
 
 .hidden-div {
-  transition: all 1s ease-in;
   background-color: #191a19;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   font-weight: bold;
@@ -175,9 +174,17 @@
   position: relative;
   padding: 0;
   margin: 0;
-  // color: white;
-  // top: 50px;
-  // left: 100px;
-  // z-index: 99;
   bottom: 1.4px;
+  animation: fade-in 0.3s ease-in;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    height: 0;
+  }
+  100% {
+    opacity: 1;
+    height: 17%;
+  }
 }

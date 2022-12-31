@@ -5,9 +5,6 @@ var card4 = document.getElementById("card4");
 
 let div = document.createElement("div");
 div.className = "hidden-div";
-div.style = "display:none";
-div.style.color = "white";
-div.style.width = 0;
 var check = setInterval(() => {
   if (
     typeof card1 != "undefined" &&
@@ -26,7 +23,7 @@ var check = setInterval(() => {
     card3 = document.getElementById("card3");
     card4 = document.getElementById("card4");
   }
-}, 1000);
+}, 500);
 
 const check1enter = () => {
   if (card1.style.borderColor === "rgb(0, 228, 0)") {
@@ -55,7 +52,6 @@ const check1enter = () => {
     div.classList.add("overlay2-maroon");
   }
   div.style = "display:flex";
-  div.style.width = 100;
   const container = document.getElementById("container");
   container.insertBefore(div, container.firstChild);
 };
