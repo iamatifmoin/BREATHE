@@ -4,6 +4,7 @@ import "./input.scss";
 const Input = () => {
   const [city, setCity] = useState("");
   const [flag, setFlag] = useState(0);
+  const [errorStatus, setErrorStatus] = useState(0);
   const [loading, setLoading] = useState(false);
   const [receivedData, setReceivedData] = useState(null);
 
@@ -27,12 +28,26 @@ const Input = () => {
       })
       .catch((err) => {
         console.log(`error ${err}`);
+        setErrorStatus(1);
       });
   };
 
   return (
     <>
-      {loading ? (
+      {errorStatus ? (
+        <div className="error">
+          An Error Occurred.
+          <br />
+          <br />
+          <div className="error-solution">
+            Refresh the page and make sure to Enter a Valid City.
+            <br />
+            OR
+            <br />
+            Try Again Later.
+          </div>
+        </div>
+      ) : loading ? (
         <div className="loader-container">
           <div className="spinner"></div>
         </div>

@@ -192,6 +192,27 @@
   animation: fade-in 0.3s ease-in;
 }
 
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  width: 90%;
+  // padding: 40px;
+  height: 90%;
+  position: relative;
+  bottom: 13px;
+}
+.error-solution {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+
 @keyframes fade-in {
   0% {
     opacity: 0;
