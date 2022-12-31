@@ -2,9 +2,12 @@ var card1 = document.getElementById("card1");
 var card2 = document.getElementById("card2");
 var card3 = document.getElementById("card3");
 var card4 = document.getElementById("card4");
+var overall = document.getElementById("overall");
 
 let div = document.createElement("div");
 div.className = "hidden-div";
+let div2 = document.createElement("div");
+div2.className = "hidden-div2";
 var check = setInterval(() => {
   if (
     typeof card1 != "undefined" &&
@@ -17,11 +20,15 @@ var check = setInterval(() => {
     card4 != null
   ) {
     clearInterval(check);
+    const container = document.getElementById("container");
+    container.insertBefore(div, container.firstChild);
+    container.appendChild(div2);
   } else {
     card1 = document.getElementById("card1");
     card2 = document.getElementById("card2");
     card3 = document.getElementById("card3");
     card4 = document.getElementById("card4");
+    overall = document.getElementById("overall");
   }
 }, 500);
 
@@ -52,8 +59,6 @@ const check1enter = () => {
     div.classList.add("overlay2-maroon");
   }
   div.style = "display:flex";
-  const container = document.getElementById("container");
-  container.insertBefore(div, container.firstChild);
 };
 const check1exit = () => {
   if (card1.style.borderColor === "rgb(0, 228, 0)") {
@@ -70,6 +75,7 @@ const check1exit = () => {
     card1.classList.remove("overlay-maroon");
   }
   div.style = "display:none";
+
   if (div.classList.contains("overlay2-green")) {
     div.classList.remove("overlay2-green");
   } else if (div.classList.contains("overlay2-yellow")) {
@@ -111,8 +117,6 @@ const check2enter = () => {
     div.classList.add("overlay2-maroon");
   }
   div.style = "display:flex";
-  const container = document.getElementById("container");
-  container.insertBefore(div, container.firstChild);
 };
 const check2exit = () => {
   if (card2.style.borderColor === "rgb(0, 228, 0)") {
@@ -170,8 +174,6 @@ const check3enter = () => {
     div.classList.add("overlay2-maroon");
   }
   div.style = "display:flex";
-  const container = document.getElementById("container");
-  container.insertBefore(div, container.firstChild);
 };
 const check3exit = () => {
   if (card3.style.borderColor === "rgb(0, 228, 0)") {
@@ -229,8 +231,6 @@ const check4enter = () => {
     div.classList.add("overlay2-maroon");
   }
   div.style = "display:flex";
-  const container = document.getElementById("container");
-  container.insertBefore(div, container.firstChild);
 };
 const check4exit = () => {
   if (card4.style.borderColor === "rgb(0, 228, 0)") {
@@ -262,6 +262,32 @@ const check4exit = () => {
   }
 };
 
+const overall_enter = () => {
+  if (overall.style.color === "rgb(0, 228, 0)") {
+    div2.innerHTML = "Good";
+    div2.classList.add("overlay2-green");
+  } else if (overall.style.color === "rgb(255, 255, 0)") {
+    div2.innerHTML = "Moderate";
+    div2.classList.add("overlay2-yellow");
+  } else if (overall.style.color === "rgb(255, 126, 0)") {
+    div2.innerHTML = "Unhealty for Sensitive Groups";
+    div2.classList.add("overlay2-orange");
+  } else if (overall.style.color === "rgb(255, 0, 0)") {
+    div2.innerHTML = "Unhealthy";
+    div2.classList.add("overlay2-red");
+  } else if (overall.style.color === "rgb(143, 63, 151)") {
+    div2.innerHTML = "Very Unhealthy";
+    div2.classList.add("overlay2-purple");
+  } else {
+    div2.innerHTML = "Hazardous";
+    div2.classList.add("overlay2-maroon");
+  }
+  div2.style = "display:flex";
+};
+const overall_exit = () => {
+  div2.style = "display:none";
+};
+
 const all_data = {
   check1enter,
   check1exit,
@@ -271,5 +297,7 @@ const all_data = {
   check3exit,
   check4enter,
   check4exit,
+  overall_enter,
+  overall_exit,
 };
 export default all_data;

@@ -178,6 +178,20 @@
   animation: fade-in 0.3s ease-in;
 }
 
+.hidden-div2 {
+  background-color: #191a19;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  bottom: 1.4px;
+  animation: fade-in 0.3s ease-in;
+}
+
 @keyframes fade-in {
   0% {
     opacity: 0;

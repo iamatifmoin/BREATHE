@@ -173,9 +173,14 @@ const Input = () => {
               <div className="aqi">AQI: {receivedData?.["SO2"]["aqi"]}</div>
             </div>
           </div>
-          <div className="row2">
+          <div
+            className="row2"
+            onMouseEnter={all_data.overall_enter}
+            onMouseLeave={all_data.overall_exit}
+          >
             Overall AQI:
             <span
+              id="overall"
               style={{
                 color:
                   receivedData?.["overall_aqi"] < 50
@@ -196,6 +201,7 @@ const Input = () => {
               {receivedData?.["overall_aqi"]}
             </span>
           </div>
+          <div className="hidden-div2"></div>
         </div>
       )}
     </>
