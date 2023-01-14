@@ -17,14 +17,7 @@ A web-app that lets you check the Air Quality in your city.
 
 - Enter your City.
 - Click 'Submit'.
-
-![](./public/Home.PNG)
-
 - Hover over the Data to check Air Quality.
-
-![](./public/Data1.png)
-
-![](./public/Data2.png)
 
 ## AQI Basics for Ozone and Particle Pollution:
 
