@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# BREATHE
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="./public/BREATHE-white.png" alt="breathe-white-logo" width="100" height="100"/>
+<img src="./public/BREATHE-black.png" alt="breathe-white-logo" width="100" height="100"/>
 
-## Available Scripts
+A web-app that lets you check the Air Quality in your city.
 
-In the project directory, you can run:
+## Languages / Frameworks Used:
 
-### `npm start`
+<a href="https://reactjs.org/" target="_blank"> <img src="https://img.icons8.com/color/48/000000/react-native.png"/> </a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://img.icons8.com/color/48/000000/javascript.png"/> </a>
+<a href="https://www.w3schools.com/css/" target="_blank"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="css3-logo" width="40" height="40"/> </a>
+<a href="https://www.w3.org/html/" target="_blank"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="html5-logo" width="40" height="40"/> </a>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## API Used:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[Air Quality API](https://api-ninjas.com/api/airquality) by API Ninjas.
 
-### `npm test`
+## How To Use the Website:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Enter your City.
+- Click 'Submit'.
+- Hover over the Data to check Air Quality.
 
-### `npm run build`
+## AQI Basics for Ozone and Particle Pollution:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| AQI Range  |          Air Quality           | Symbolised by Color |
+| ---------- | :----------------------------: | ------------------: |
+| 0 to 50    |              Good              |               Green |
+| 51 to 100  |            Moderate            |              Yellow |
+| 101 to 150 | Unhealthy for Sensitive Groups |              Orange |
+| 151 to 200 |           Unhealthy            |                 Red |
+| 201 to 300 |         Very Unhealthy         |              Purple |
+| 301 to 500 |           Hazardous            |              Maroon |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Made By:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Atif Moin
 
-### `npm run eject`
+<h3> <b>Let's Connect :</b></h3>
+<p align="left">
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<a href = "https://www.linkedin.com/in/atif-moin-b1559a220/" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/linkedin.png"/></a>
+<a href = "https://twitter.com/iamatifmoin" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/twitter.png"/></a>
+<a href = "https://www.instagram.com/iamatifmoin" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/></a></h2>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+</p>
