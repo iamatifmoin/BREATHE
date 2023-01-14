@@ -1,7 +1,7 @@
 # BREATHE
 
-<img src="./public/BREATHE-white.png" alt="breathe-white-logo" width="100" height="100"/>
-<img src="./public/BREATHE-black.png" alt="breathe-white-logo" width="100" height="100"/>
+<!-- <img src="./public/BREATHE-white.png" alt="breathe-white-logo" width="100" height="100"/>
+<img src="./public/BREATHE-black.png" alt="breathe-black-logo" width="100" height="100"/> -->
 
 A web-app that lets you check the Air Quality in your city.
 
