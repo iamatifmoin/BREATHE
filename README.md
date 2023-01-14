@@ -4,10 +4,10 @@ A web-app that lets you check the Air Quality in your city.
 
 ## Languages / Frameworks Used:
 
-<a href="https://reactjs.org/" target="_blank"> <img src="https://img.icons8.com/color/48/000000/react-native.png"/> </a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://img.icons8.com/color/48/000000/javascript.png"/> </a>
-<a href="https://www.w3schools.com/css/" target="_blank"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="css3-logo" width="40" height="40"/> </a>
-<a href="https://www.w3.org/html/" target="_blank"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="html5-logo" width="40" height="40"/> </a>
+- ReactJs
+- JavaScript
+- CSS
+- HTML
 
 ## API Used:
 
@@ -38,7 +38,6 @@ Atif Moin
 <p align="left">
 
 <a href = "https://www.linkedin.com/in/atif-moin-b1559a220/" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/linkedin.png"/></a>
-<a href = "https://twitter.com/iamatifmoin" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/twitter.png"/></a>
-<a href = "https://www.instagram.com/iamatifmoin" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/></a></h2>
+<a href = "https://twitter.com/iamatifmoin" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/twitter.png"/></a><a href="https://www.instagram.com/iamatifmoin" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/></a></h2>
 
 </p>
