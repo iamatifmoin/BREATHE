@@ -18,7 +18,7 @@ A web-app that lets you check the Air Quality in your city.
 - Enter your City.
 - Click 'Submit'.
 
-![](./public/Home.png)
+![](./public/Home.PNG)
 
 - Hover over the Data to check Air Quality.
 
