@@ -1,7 +1,7 @@
 # BREATHE
 
-<!-- <img src="./public/BREATHE-white.png" alt="breathe-white-logo" width="100" height="100"/>
-<img src="./public/BREATHE-black.png" alt="breathe-black-logo" width="100" height="100"/> -->
+<img src="./public/BREATHE-white.png" alt="breathe-white-logo" width="100" height="100"/>
+<img src="./public/BREATHE-black.png" alt="breathe-black-logo" width="100" height="100"/>
 
 A web-app that lets you check the Air Quality in your city.
 
@@ -20,7 +20,14 @@ A web-app that lets you check the Air Quality in your city.
 
 - Enter your City.
 - Click 'Submit'.
+
+  <img src="./public/Home.png" alt="breathe-home"/>
+
 - Hover over the Data to check Air Quality.
+
+  <img src="./public/Data1.png" alt="breathe-data"/>
+
+  <img src="./public/Data2.png" alt="breathe-data2"/>
 
 ## AQI Basics for Ozone and Particle Pollution:
 
