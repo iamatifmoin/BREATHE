@@ -30,6 +30,10 @@ A web-app that lets you check the Air Quality in your city.
 | 201 to 300 |         Very Unhealthy         |              Purple |
 | 301 to 500 |           Hazardous            |              Maroon |
 
+## Screenshots
+
+![Screenshot](./assets/BREATHE.png)
+
 ## Made By:
 
 Atif Moin
